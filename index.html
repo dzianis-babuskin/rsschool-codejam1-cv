@@ -11,18 +11,83 @@
   </head>
   <body>
     <div class="header">
-        <img src="" alt="Photo of Dzianis">
+        <img src="img.jpg" alt="Photo of Dzianis" height="300">
         <p id="name">Dzianis Babuskin</p>
-        <a href="mailto:3169477@gmail.com" target="_blank"><p id="email">3169477@gmail.com</p></a>
+        <a href="mailto:3169477@gmail.com" target="_blank">
+            <p id="email">3169477@gmail.com</p>
+        </a>
         <p id="phone">+375(33)316-94-77</p>
-        <p id="summary"></p>
+        <p id="summary">The main purpose:<br/> To gain experience of JavaScript programming to expand the technical skill</p>
     </div>
     <div class="skills">
-        <p id="skills"></p>
-        <p id="codeExamples"></p>
-        <p id="expirience"></p>
-        <p id="education"></p>
-        <p id="english"></p>
+        <p id="skills">
+            Skills:
+            <ul>
+                <li>JavaScript (1 year)</li>
+                <li>HTML (1 year)</li>
+                <li>CSS (1 year)</li>
+                <li>Git (1 year)</li>
+                <li>Jira (2 years)</li>
+            </ul>
+        </p>
+        <p id="codeExamples">
+            Code examples:<br/>
+            function longestConsecutiveLength(array) {<br/>
+                if (array.length == 0) {<br/>
+                  return 0;<br/>
+                }<br/>
+                let ar = array.sort((a, b) => a - b);<br/>
+                let sum = 0, max = 0;<br/>
+                for (let i = 0; i < ar.length-1; i++) {<br/>
+                  if (Math.abs(ar[i]-ar[i+1]) == 1) {<br/>
+                    sum++;<br/>
+                  } else if (sum > max) {<br/>
+                    max = sum;<br/>
+                    sum = 0;<br/>
+                  } else {<br/>
+                    sum = 0;<br/>
+                  }<br/>
+                }<br/>
+                return max + 1;<br/>
+              }<br/>
+        </p>
+        <p id="experience">
+            Experience:
+            <ul>
+                <li>1 year at IT</li>
+                <li>Performed tasks at RSS School</li>
+            </ul>
+
+        </p>
+        <p id="education">
+            Education:
+            <table>
+                    <tr>
+                      <th>Institution/Courses</th>
+                      <th>Faculty/Direction</th>
+                      <th>Department</th>
+                      <th>Degree</th>
+                      <th>Graduation year</th>
+                    </tr>
+                    <tr>
+                      <td>BSUIR</td>
+                      <td>Radioengineering And Electronics</td>
+                      <td>Micro And Nanoelectronics </td>
+                      <td>Bachelor </td>
+                      <td>2017</td>
+                    </tr>
+                    <tr>
+                      <td>RSS</td>
+                      <td>JavaScript</td>
+                      <td></td>
+                      <td>Student</td>
+                      <td>In progress</td>
+                    </tr>
+                  </table>
+        </p>
+        <p id="english">
+            B1 - Intermediate
+        </p>
     </div>
   </body>
 </html>
