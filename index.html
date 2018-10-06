@@ -31,7 +31,7 @@
                 <div class="sectionTitle">
                     <h3>Summary:</h3>
                 </div>
-                <div class="sectionTitle">
+                <div class="sectionTitle" id="summary">
                     <p>My main purpose - to gain knowledge in JavaScript programming for growing technical skills</p>
                 </div>
                 <div class="clear"></div>
@@ -41,43 +41,41 @@
                     <h3>Skills:</h3>
                 </div>
                 <div class="sectionContent">
-                    <p>
-                        <ul class="skills">
-                            <li>JavaScript</li>
-                            <li>HTML </li>
-                            <li>CSS</li>
-                            <li>Git</li>
-                            <li>Jira</li>
-                        </ul>
-                    </p>
+                    <ul class="skills">
+                        <li>JavaScript</li>
+                        <li>HTML </li>
+                        <li>CSS</li>
+                        <li>Git</li>
+                        <li>Jira</li>
+                    </ul>  
                 </div>
                 <div class="clear"></div>
             </section>
             <section>
-                <div class="sectionTitle">
-                    <h3>Code Examples:</h3>
+                <div >
+                    <h3>Code Example:</h3>
                 </div>
-                <div class="sectionContent">
-                    <p class="code">
-                        function longestConsecutiveLength(array) {<br/>
-                            if (array.length == 0) {<br/>
-                            return 0;<br/>
-                            }<br/>
-                            let ar = array.sort((a, b) => a - b);<br/>
-                            let sum = 0, max = 0;<br/>
-                            for (let i = 0; i < ar.length-1; i++) {<br/>
-                            if (Math.abs(ar[i]-ar[i+1]) == 1) {<br/>
-                                sum++;<br/>
-                            } else if (sum > max) {<br/>
-                                max = sum;<br/>
-                                sum = 0;<br/>
-                            } else {<br/>
-                                sum = 0;<br/>
-                            }<br/>
-                            }<br/>
-                            return max + 1;<br/>
-                        }<br/>
-                    </p>
+                <div >
+                    <pre class="code">
+                        function longestConsecutiveLength(array) {
+                            if (array.length == 0) {
+                            return 0;
+                            }
+                            let ar = array.sort((a, b) => a - b);
+                            let sum = 0, max = 0;
+                            for (let i = 0; i < ar.length-1; i++) {
+                            if (Math.abs(ar[i]-ar[i+1]) == 1) {
+                                sum++;
+                            } else if (sum > max) {
+                                max = sum;
+                                sum = 0;
+                            } else {
+                                sum = 0;
+                            }
+                            }
+                            return max + 1;
+                        }
+                    </pre>
                 </div>
                 <div class="clear"></div>
             </section>
@@ -85,46 +83,42 @@
                 <div class="sectionTitle">
                     <h3>Experience:</h3>
                 </div>
-                <div class="sectionContent">
-                    <p>
-                        <ul class="experience">
-                            <li>1 year at IT</li>
-                            <li>Performed tasks at RSS</li>
-                        </ul>
-                    </p>
+                <div class="sectionContent">   
+                    <ul class="experience">
+                        <li>0.5 year at IT (Software Testing Engineer)</li>
+                        <li>Performed tasks at RSS</li>
+                    </ul>
                 </div> 
                 <div class="clear"></div>
             </section>
             <section>
-                <div>
+                <div class="sectionTitle">
                     <h3>Education:</h3>
                 </div>
-                <div>
-                    <p>
-                        <table class="education">
-                            <tr>
-                                <th>Institution/Courses</th>
-                                <th>Faculty/Direction</th>
-                                <th>Department</th>
-                                <th>Degree</th>
-                                <th>Graduation year</th>
-                            </tr>
-                            <tr>
-                                <td>BSUIR</td>
-                                <td>Radioengineering And Electronics</td>
-                                <td>Micro And Nanoelectronics </td>
-                                <td>Bachelor </td>
-                                <td>2017</td>
-                            </tr>
-                            <tr>
-                                <td>RSS</td>
-                                <td>JavaScript</td>
-                                <td></td>
-                                <td>Student</td>
-                                <td>In progress</td>
-                            </tr>
-                        </table>
-                    </p>
+                <div class="sectionContent">  
+                    <table class="education">
+                        <tr>
+                            <th>Institution/Courses</th>
+                            <th>Faculty/Direction</th>
+                            <th>Department</th>
+                            <th>Degree</th>
+                            <th>Graduation year</th>
+                        </tr>
+                        <tr>
+                            <td>BSUIR</td>
+                            <td>Radioengineering And Electronics</td>
+                            <td>Micro And Nanoelectronics </td>
+                            <td>Bachelor </td>
+                            <td>2017</td>
+                        </tr>
+                        <tr>
+                            <td>RSS</td>
+                            <td>JavaScript</td>
+                            <td></td>
+                            <td>Student</td>
+                            <td>In progress</td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="clear"></div>
             </section>
