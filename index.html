@@ -4,90 +4,134 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="CV page of Dzianis Babuskin">
-    <meta name="keywords" content="CV, cv, js, javascript, HTML, html, CSS, css">
     <meta name="author" content="Dzianis Babuskin">
     <title>CV: Dzianis Babuskin</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="header">
-        <img src="img.jpg" alt="Photo of Dzianis" height="300">
-        <p id="name">Dzianis Babuskin</p>
-        <a href="mailto:3169477@gmail.com" target="_blank">
-            <p id="email">3169477@gmail.com</p>
-        </a>
-        <p id="phone">+375(33)316-94-77</p>
-        <p id="summary">The main purpose:<br/> To gain experience of JavaScript programming to expand the technical skill</p>
+    <div class="mainDetails">
+        <div id="photo">
+            <img src="img.jpg" alt="Dzianis Babuskin" />
+        </div>  
+        <div id="name">
+            <h2 class="name">Dzianis Babuskin</h2>
+            <h3 class="jobTitle">Junior Software Engineer</h3>
+        </div>
+        <div id="contacts">
+            <ul>
+                <li>e: <a href="mailto:3169477@gmail.com" target="_blank">3169477@gmail.com</a></li>
+                <li>p: +375 (33) 3169477</li>
+            </ul>
+        </div>
+        <div class="summary">
+            <h3>Summary:</h3>
+            <p>My main purpose - to gain knowledge in JavaScript programming for growing technical skills</p>
+        </div>
+        <div class="clear"></div>
     </div>
-    <div class="skills">
-        <p id="skills">
-            Skills:
-            <ul>
-                <li>JavaScript (1 year)</li>
-                <li>HTML (1 year)</li>
-                <li>CSS (1 year)</li>
-                <li>Git (1 year)</li>
-                <li>Jira (2 years)</li>
-            </ul>
-        </p>
-        <p id="codeExamples">
-            Code examples:<br/>
-            function longestConsecutiveLength(array) {<br/>
-                if (array.length == 0) {<br/>
-                  return 0;<br/>
-                }<br/>
-                let ar = array.sort((a, b) => a - b);<br/>
-                let sum = 0, max = 0;<br/>
-                for (let i = 0; i < ar.length-1; i++) {<br/>
-                  if (Math.abs(ar[i]-ar[i+1]) == 1) {<br/>
-                    sum++;<br/>
-                  } else if (sum > max) {<br/>
-                    max = sum;<br/>
-                    sum = 0;<br/>
-                  } else {<br/>
-                    sum = 0;<br/>
-                  }<br/>
-                }<br/>
-                return max + 1;<br/>
-              }<br/>
-        </p>
-        <p id="experience">
-            Experience:
-            <ul>
-                <li>1 year at IT</li>
-                <li>Performed tasks at RSS School</li>
-            </ul>
-
-        </p>
-        <p id="education">
-            Education:
-            <table>
-                    <tr>
-                      <th>Institution/Courses</th>
-                      <th>Faculty/Direction</th>
-                      <th>Department</th>
-                      <th>Degree</th>
-                      <th>Graduation year</th>
-                    </tr>
-                    <tr>
-                      <td>BSUIR</td>
-                      <td>Radioengineering And Electronics</td>
-                      <td>Micro And Nanoelectronics </td>
-                      <td>Bachelor </td>
-                      <td>2017</td>
-                    </tr>
-                    <tr>
-                      <td>RSS</td>
-                      <td>JavaScript</td>
-                      <td></td>
-                      <td>Student</td>
-                      <td>In progress</td>
-                    </tr>
-                  </table>
-        </p>
-        <p id="english">
-            B1 - Intermediate
-        </p>
+    <div id="mainArea">
+        <section>
+            <div class="sectionTitle">
+                <h3>Skills:</h3>
+            </div>
+            <div class="sectionContent">
+                <p>
+                    <ul class="skills">
+                        <li>JavaScript (1 year)</li>
+                        <li>HTML (1 year)</li>
+                        <li>CSS (1 year)</li>
+                        <li>Git (1 year)</li>
+                        <li>Jira (2 years)</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="clear"></div>
+        </section>
+        <section>
+            <div class="sectionTitle">
+                <h3>Code Examples:</h3>
+            </div>
+            <div class="sectionContent">
+                <p class="code">
+                    function longestConsecutiveLength(array) {<br/>
+                        if (array.length == 0) {<br/>
+                        return 0;<br/>
+                        }<br/>
+                        let ar = array.sort((a, b) => a - b);<br/>
+                        let sum = 0, max = 0;<br/>
+                        for (let i = 0; i < ar.length-1; i++) {<br/>
+                        if (Math.abs(ar[i]-ar[i+1]) == 1) {<br/>
+                            sum++;<br/>
+                        } else if (sum > max) {<br/>
+                            max = sum;<br/>
+                            sum = 0;<br/>
+                        } else {<br/>
+                            sum = 0;<br/>
+                        }<br/>
+                        }<br/>
+                        return max + 1;<br/>
+                    }<br/>
+                </p>
+            </div>
+            <div class="clear"></div>
+        </section>
+        <section>
+            <div class="sectionTitle">
+                <h3>Experience:</h3>
+            </div>
+            <div class="sectionContent">
+                <p>
+                    <ul class="experience">
+                        <li>1 year at IT</li>
+                        <li>Performed tasks at RSS</li>
+                    </ul>
+                </p>
+            </div> 
+            <div class="clear"></div>
+        </section>
+        <section>
+            <div>
+                <h3>Education:</h3>
+            </div>
+            <div>
+                <p>
+                    <table class="education">
+                        <tr>
+                            <th>Institution/Courses</th>
+                            <th>Faculty/Direction</th>
+                            <th>Department</th>
+                            <th>Degree</th>
+                            <th>Graduation year</th>
+                        </tr>
+                        <tr>
+                            <td>BSUIR</td>
+                            <td>Radioengineering And Electronics</td>
+                            <td>Micro And Nanoelectronics </td>
+                            <td>Bachelor </td>
+                            <td>2017</td>
+                        </tr>
+                        <tr>
+                            <td>RSS</td>
+                            <td>JavaScript</td>
+                            <td></td>
+                            <td>Student</td>
+                            <td>In progress</td>
+                        </tr>
+                    </table>
+                </p>
+            </div>
+            <div class="clear"></div>
+        </section>
+        <section>
+            <div class="sectionTitle">
+                <h3>English:</h3>
+            </div>
+            <div class="sectionContent">
+                <p>
+                    B1 - Intermediate
+                </p>
+            </div>
+        </section>
     </div>
   </body>
 </html>
