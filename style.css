@@ -1,0 +1,118 @@
+body {
+    width: 1024px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align:left; 
+}
+
+.clear {
+    clear: both;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.4em;
+}
+
+#name {
+    float: left;
+    margin-left: 50px;
+}
+
+#name h2 {
+    margin-bottom: -40px;
+	font-size: 2.5em;
+	font-weight: 700;
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+#name h3 {
+    margin-left: 2px;
+	font-size: 2em;
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+}
+
+#mainArea {
+    padding: 0 40px;
+}
+
+#photo {
+	width: 12.5%;
+	float: left;
+    margin-left: 200px;
+}
+
+#photo img {
+	width: 100%;
+	height: auto;
+	border-radius: 50px;
+}
+
+#contacts {
+    float: right;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+#contacts ul {
+    margin-top: 2px;
+    padding-left: 0;
+	list-style-type: none;
+	font-size: 0.9em;
+}
+
+#contacts ul li {
+    margin-bottom: 3px;
+    padding-left: 0;
+}
+
+section {
+	border-top: 1px solid #dedede;
+	padding: 5px 0 0;
+}
+
+.sectionTitle {
+	float: left;
+	width: 25%;
+}
+
+#summary {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.sectionContent {
+	float: right;
+	width: 72.5%;
+}
+
+.skills {
+    margin-bottom: 15px;
+    padding-left: 0;
+    padding-right: 100px;
+    list-style-type: none;
+	column-count:3;
+    font-size: 1em;
+}
+
+.experience {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.education {
+    text-align: center;
+}
+
+.skills ul li {
+	margin-bottom: 3px;
+}
+
+.code {
+    padding-left: 50px;
+}
+
+#link {
+    text-align: center;
+}

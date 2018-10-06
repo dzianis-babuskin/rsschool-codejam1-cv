@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="CV page of Dzianis Babuskin">
+        <meta name="author" content="Dzianis Babuskin">
+        <title>CV: Dzianis Babuskin</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="mainDetails">
+            <div id="photo">
+                <img src="img.jpg" alt="Dzianis Babuskin" height="200" />
+            </div>  
+            <div id="name">
+                <h2 class="name">Dzianis Babuskin</h2>
+                <h3 class="jobTitle">Junior Software Engineer</h3>
+            </div>
+            <div id="contacts">
+                <ul>
+                    <li>e: <a href="mailto:3169477@gmail.com" target="_blank">3169477@gmail.com</a></li>
+                    <li>p: +375 (33) 3169477</li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="mainArea">
+            <section>
+                <div class="sectionTitle">
+                    <h3>Summary:</h3>
+                </div>
+                <div class="sectionTitle" id="summary">
+                    <p>My main purpose - to gain knowledge in JavaScript programming for growing technical skills</p>
+                </div>
+                <div class="clear"></div>
+            </section>
+            <section>
+                <div class="sectionTitle">
+                    <h3>Skills:</h3>
+                </div>
+                <div class="sectionContent">
+                    <ul class="skills">
+                        <li>JavaScript</li>
+                        <li>HTML </li>
+                        <li>CSS</li>
+                        <li>Git</li>
+                        <li>Jira</li>
+                    </ul>  
+                </div>
+                <div class="clear"></div>
+            </section>
+            <section>
+                <div >
+                    <h3>Code Example:</h3>
+                </div>
+                <div >
+                    <pre class="code">
+                        function longestConsecutiveLength(array) {
+                            if (array.length == 0) {
+                            return 0;
+                            }
+                            let ar = array.sort((a, b) => a - b);
+                            let sum = 0, max = 0;
+                            for (let i = 0; i < ar.length-1; i++) {
+                            if (Math.abs(ar[i]-ar[i+1]) == 1) {
+                                sum++;
+                            } else if (sum > max) {
+                                max = sum;
+                                sum = 0;
+                            } else {
+                                sum = 0;
+                            }
+                            }
+                            return max + 1;
+                        }
+                    </pre>
+                    <p id="link">
+                        You can find more examples <a href="https://github.com/Sined1" target="_blank">HERE</a>
+                    </p>
+                </div>
+                <div class="clear"></div>
+            </section>
+            <section>
+                <div class="sectionTitle">
+                    <h3>Experience:</h3>
+                </div>
+                <div class="sectionContent">   
+                    <ul class="experience">
+                        <li>0.5 year at IT (Software Testing Engineer)</li>
+                        <li>Performed tasks at RSS</li>
+                    </ul>
+                </div> 
+                <div class="clear"></div>
+            </section>
+            <section>
+                <div class="sectionTitle">
+                    <h3>Education:</h3>
+                </div>
+                <div class="sectionContent">  
+                    <table class="education">
+                        <tr>
+                            <th>Institution/Courses</th>
+                            <th>Faculty/Direction</th>
+                            <th>Department</th>
+                            <th>Degree</th>
+                            <th>Graduation year</th>
+                        </tr>
+                        <tr>
+                            <td>BSUIR</td>
+                            <td>Radioengineering And Electronics</td>
+                            <td>Micro And Nanoelectronics </td>
+                            <td>Bachelor </td>
+                            <td>2017</td>
+                        </tr>
+                        <tr>
+                            <td>RSS</td>
+                            <td>JavaScript</td>
+                            <td></td>
+                            <td>Student</td>
+                            <td>In progress</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="clear"></div>
+            </section>
+            <section>
+                <div class="sectionTitle">
+                    <h3>English:</h3>
+                </div>
+                <div class="sectionContent">
+                    <p>
+                        B1 - Intermediate
+                    </p>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
